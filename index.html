@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#050608">
+  <title>Batman — Gotham Opening</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="movie" id="movie">
+    <div class="film-grain"></div>
+    <div class="vignette"></div>
+    <div class="comic-frame" aria-hidden="true"></div>
+
+    <!-- ESCENA 1: vista aérea de Gotham -->
+    <section class="scene scene-gotham active" id="scene1">
+      <div class="storm-clouds"></div>
+      <div class="moon"></div>
+      <div class="skyline skyline-far"></div>
+      <div class="skyline skyline-near"></div>
+      <div class="city-bats" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="rain"></div>
+      <div class="scene-credit">
+        <span class="credit-small">EN UNA CIUDAD SIN ESPERANZA</span>
+        <strong>GOTHAM CITY</strong>
+        <span class="credit-line"></span>
+      </div>
+    </section>
+
+    <!-- ESCENA 2: la batiseñal proyectada entre edificios -->
+    <section class="scene scene-signal" id="scene2">
+      <div class="rooftop rooftop-left"></div>
+      <div class="rooftop rooftop-right"></div>
+      <div class="signal-beam"></div>
+      <div class="signal-disc">
+        <svg viewBox="0 0 300 130" class="bat-logo" aria-label="Emblema de murciélago">
+          <path d="M150 123
+            C138 108 125 96 112 92
+            C99 88 86 91 76 100
+            C73 83 61 74 4 77
+            C14 47 40 23 82 12
+            C70 26 67 36 79 43
+            C91 50 111 52 132 51
+            L139 26 L150 40 L161 40 L168 26
+            L175 51
+            C196 52 216 50 228 43
+            C240 36 237 26 225 12
+            C267 23 286 47 296 77
+            C239 74 227 83 224 100
+            C214 91 201 88 188 92
+            C175 96 162 108 150 123 Z"/>
+        </svg>
+      </div>
+      <div class="signal-caption">
+        <span>CUANDO GOTHAM LLAMA...</span>
+        <strong>ÉL RESPONDE.</strong>
+      </div>
+      <div class="rain"></div>
+    </section>
+
+    <!-- ESCENA 3: planos originales del Batimóvil -->
+    <section class="scene scene-blueprint" id="scene3">
+      <div class="blueprint-grid"></div>
+      <div class="blueprint-heading">
+        <span class="credit-small">WAYNE INDUSTRIES · ARCHIVO CLASIFICADO</span>
+        <strong>PROYECTO: BATMÓVIL</strong>
+      </div>
+      <svg class="blueprint-sheet" viewBox="0 0 456 430" role="img" aria-label="Cuatro planos dibujados del Batimóvil">
+        <g aria-label="Vista lateral">
+          <path class="blueprint-line" d="M10 55 L16 46 L32 42 L42 39 L55 38 L64 35 L78 36 Q91 25 111 27 L128 32 L154 32 Q176 33 193 40 L198 20 L204 36 L211 34 L219 12 L224 43 L230 51 L221 57 L208 59 A9 9 0 0 0 190 59 L88 59 A15 15 0 0 0 58 59 L20 59 Z"/>
+          <path class="blueprint-line" d="M20 46 L30 42 L54 40 M81 37 L100 32 L121 34 L140 42 M112 30 L126 20 L151 22 L165 34 M151 34 L176 38 L193 40 L198 20 L204 36 L211 34 L219 12 L224 43"/>
+          <circle class="blueprint-line" cx="73" cy="58" r="15"/><circle class="blueprint-line" cx="202" cy="58" r="9"/>
+          <path class="blueprint-detail" d="M13 51 L35 47 L54 42 M58 50 L83 46 M91 49 L112 47 M138 46 L165 44 M181 45 L195 48 M123 37 l4 -4 4 4 4 -4 4 4 4 -4 4 4 M199 55 V61 M203 54 V62 M207 55 V61"/>
+          <circle class="blueprint-detail" cx="73" cy="58" r="9"/><circle class="blueprint-detail" cx="202" cy="58" r="5"/>
+          <path class="blueprint-detail" d="M68 58 H78 M73 53 V63 M199 58 H205"/>
+          <path class="blueprint-dimension" d="M16 72 H218 M16 69 V75 M218 69 V75"/>
+        </g>
+        <g aria-label="Vista superior">
+          <path class="blueprint-line" d="M65 104 L80 111 L91 123 L101 128 L105 151 L100 176 L108 199 L103 229 L95 272 L83 313 L65 356 L47 313 L35 272 L27 229 L22 199 L30 176 L25 151 L29 128 L39 123 L50 111 Z"/>
+          <path class="blueprint-line" d="M39 126 L22 111 L20 145 L32 158 M91 126 L108 111 L110 145 L98 158 M43 119 L45 108 L51 101 L58 115 M87 119 L85 108 L79 101 L72 115"/>
+          <path class="blueprint-detail" d="M65 114 L78 141 L89 159 L84 185 L93 205 L86 230 L88 262 L77 300 L65 332 L53 300 L42 262 L44 230 L37 205 L46 185 L41 159 L52 141 Z"/>
+          <path class="blueprint-line" d="M49 157 L59 147 L71 151 L81 147 L91 157 M40 168 L90 168 L88 187 L42 187 Z M39 201 L65 209 L91 201 M36 238 L65 227 L94 238 M47 285 L65 276 L83 285 M48 304 L65 321 L82 304"/>
+          <path class="blueprint-detail" d="M53 172 l3 5 3 -5 3 5 3 -5 3 5 3 -5 3 5 3 -5 M39 181 H31 M92 181 H99 M39 244 l8 -3 M90 241 l8 3 M58 194 L65 201 L72 194"/>
+          <ellipse class="blueprint-line" cx="35" cy="172" rx="8" ry="19"/><ellipse class="blueprint-line" cx="95" cy="172" rx="8" ry="19"/>
+          <ellipse class="blueprint-line" cx="37" cy="265" rx="8" ry="18"/><ellipse class="blueprint-line" cx="93" cy="265" rx="8" ry="18"/>
+          <path class="blueprint-detail" d="M32 157 L38 187 M92 157 L98 187 M34 251 L40 279 M90 251 L96 279"/>
+          <path class="blueprint-dimension" d="M16 119 V330 M13 119 H19 M13 330 H19"/>
+        </g>
+        <g aria-label="Vista trasera">
+          <path class="blueprint-line" d="M244 133 Q240 117 253 104 L274 96 L282 80 L297 74 L305 97 Q319 91 344 91 Q370 91 385 97 L393 76 L408 70 L417 96 L437 104 Q450 118 446 134 L436 148 L408 150 L394 143 A17 17 0 0 0 360 143 L330 149 L300 149 L286 142 L270 150 L251 146 Z"/>
+          <path class="blueprint-line" d="M248 126 Q269 115 289 116 L312 122 L330 126 L360 122 Q383 114 407 116 L440 126 M280 100 Q302 104 315 115 M375 115 Q393 102 414 100 M287 128 Q316 134 345 132 L376 128 Q402 125 426 132"/>
+          <circle class="blueprint-line" cx="280" cy="139" r="16"/><circle class="blueprint-line" cx="416" cy="139" r="16"/>
+          <circle class="blueprint-detail" cx="280" cy="139" r="10"/><circle class="blueprint-detail" cx="416" cy="139" r="10"/>
+          <circle class="blueprint-line" cx="347" cy="124" r="16"/><circle class="blueprint-detail" cx="347" cy="124" r="10"/>
+          <path class="blueprint-detail" d="M251 129 L271 121 L279 125 M307 133 L325 133 M369 133 L387 132 M426 120 L441 128 M291 107 L307 116 M386 115 L406 106 M347 114 V134 M337 124 H357 M272 139 H288 M280 131 V147 M408 139 H424 M416 131 V147"/>
+          <path class="blueprint-dimension" d="M247 157 H439 M247 154 V160 M439 154 V160"/>
+        </g>
+        <g aria-label="Perspectiva delantera">
+          <path class="blueprint-line" d="M166 353 L178 333 L207 321 L239 301 Q260 283 286 287 L313 292 L341 300 L365 315 L397 321 Q416 327 428 344 L420 360 L391 367 L374 355 A15 15 0 0 0 344 360 L278 378 L240 376 L229 361 A22 22 0 0 0 185 365 L173 363 Z"/>
+          <path class="blueprint-line" d="M172 350 L199 337 L229 330 L251 312 Q270 297 290 301 L314 306 L338 315 L364 330 L397 334 L413 347 L392 354 L367 348 L342 344 L320 352 L288 364 L248 366 L228 351 L203 357 L182 360 Z"/>
+          <path class="blueprint-line" d="M239 330 L246 306 L263 278 L272 327 M330 328 L344 296 L366 278 L363 335 M246 325 Q263 303 287 302 L315 309 L334 322"/>
+          <path class="blueprint-line" d="M365 330 Q379 318 397 322 M181 348 L203 343 L221 348 M277 364 L322 353"/>
+          <circle class="blueprint-line" cx="207" cy="359" r="22"/><circle class="blueprint-line" cx="359" cy="356" r="15"/>
+          <circle class="blueprint-detail" cx="207" cy="359" r="15"/><circle class="blueprint-detail" cx="359" cy="356" r="9"/>
+          <path class="blueprint-detail" d="M207 337 V381 M185 359 H229 M191 343 L223 375 M223 343 L191 375 M359 343 V369 M346 356 H372 M350 347 L368 365 M368 347 L350 365 M178 349 L190 346 M230 342 L247 334 M282 321 L310 314 M375 338 L396 341 M387 350 L408 349"/>
+          <path class="blueprint-dimension" d="M177 385 Q287 397 417 374"/>
+        </g>
+      </svg>
+      <div class="rain"></div>
+    </section>
+
+    <!-- ESCENA 4: el Batimóvil en las calles de Gotham -->
+    <section class="scene scene-street" id="scene4">
+      <div class="street-skyline"></div>
+      <div class="street-lamps"><i></i><i></i><i></i></div>
+      <div class="wet-road"></div>
+      <div class="road-lines"></div>
+      <div class="speed-streaks" aria-hidden="true"></div>
+      <div class="batmobile" role="img" aria-label="Batimóvil dibujado de frente en perspectiva de tres cuartos">
+        <div class="car-glow"></div>
+        <svg class="car-illustration" viewBox="0 0 760 390" aria-hidden="true">
+          <defs>
+            <linearGradient id="carArmor" x1="0" y1="0" x2="0.8" y2="1">
+              <stop stop-color="#89959a"/><stop offset=".13" stop-color="#465158"/><stop offset=".4" stop-color="#11171b"/><stop offset=".68" stop-color="#343d42"/><stop offset=".86" stop-color="#151b1f"/><stop offset="1" stop-color="#050709"/>
+            </linearGradient>
+            <linearGradient id="canopy" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#99a5aa"/><stop offset=".12" stop-color="#56636a"/><stop offset=".31" stop-color="#151d22"/><stop offset=".68" stop-color="#080c10"/><stop offset="1" stop-color="#626e74"/>
+            </linearGradient>
+            <linearGradient id="armorHighlight" x1="0" y1="0" x2="1" y2="1">
+              <stop stop-color="#e0e5e5" stop-opacity=".88"/><stop offset=".18" stop-color="#9aa4a8" stop-opacity=".4"/><stop offset=".5" stop-color="#20272b" stop-opacity=".08"/><stop offset=".82" stop-color="#b6bec0" stop-opacity=".34"/><stop offset="1" stop-color="#080a0c" stop-opacity=".9"/>
+            </linearGradient>
+            <linearGradient id="bat-fin" x1="0" y1="0" x2="1" y2=".6">
+              <stop stop-color="#c5cccd"/><stop offset=".16" stop-color="#687277"/><stop offset=".38" stop-color="#171d20"/><stop offset=".7" stop-color="#41494d"/><stop offset="1" stop-color="#07090a"/>
+            </linearGradient>
+            <radialGradient id="headlamp">
+              <stop stop-color="#fff" stop-opacity=".98"/><stop offset=".22" stop-color="#e0e6e5" stop-opacity=".94"/><stop offset=".45" stop-color="#a5b1b2" stop-opacity=".54"/><stop offset="1" stop-color="#899698" stop-opacity="0"/>
+            </radialGradient>
+            <radialGradient id="wheelMetal">
+              <stop stop-color="#c1cbd0"/><stop offset=".18" stop-color="#59666e"/><stop offset=".22" stop-color="#10161a"/><stop offset=".52" stop-color="#252e34"/><stop offset=".56" stop-color="#87939a"/><stop offset=".64" stop-color="#090c0f"/><stop offset="1" stop-color="#050709"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="380" cy="361" rx="286" ry="23" fill="#020304" opacity=".9"/>
+          <path d="M444 182 L469 145 L481 106 L494 151 L516 124 L518 166 L556 151 L575 176 L643 192 L691 231 L659 264 L575 281 L500 264 Z" fill="url(#bat-fin)" stroke="#899499" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M459 173 L481 116 L491 157 L513 132 L514 169 L553 158 M483 170 L500 149 M525 174 L557 161" fill="none" stroke="#c0c8ca" stroke-width="2" opacity=".72"/>
+          <path d="M535 160 L593 132 L690 119 L719 127 L708 139 L612 153 L551 174 Z" fill="url(#carArmor)" stroke="#aab4b7" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M562 161 L609 142 L695 126 M601 154 L597 190 M681 143 L676 190" fill="none" stroke="#c5cdcf" stroke-width="2" opacity=".8"/>
+          <path d="M446 204 Q469 168 516 169 L560 189 L576 230 L542 266 L476 256 Z" fill="#05080a" stroke="#737f85" stroke-width="4"/>
+          <circle cx="514" cy="220" r="35" fill="#020405" stroke="#9ba5a9" stroke-width="4"/><circle cx="514" cy="220" r="26" fill="url(#wheelMetal)" stroke="#343e43" stroke-width="3"/>
+          <path d="M514 196 V244 M490 220 H538 M497 203 L531 237 M531 203 L497 237" fill="none" stroke="#aab4b7" stroke-width="2"/>
+          <path d="M78 270 L105 226 L161 193 L246 165 L300 147 Q364 115 442 132 L506 164 L574 196 L648 225 L680 250 L660 280 L598 303 L509 314 L441 322 L386 326 L299 326 L217 322 L145 310 L99 296 Z" fill="url(#carArmor)" stroke="#7e898e" stroke-width="3" stroke-linejoin="round"/>
+          <path d="M96 267 L123 231 L174 201 L252 174 L306 157 Q367 127 437 143 L499 173 L564 203 L635 230 L660 250 L642 270 L590 291 L507 301 L444 307 L386 312 L301 312 L222 307 L151 294 L112 285 Z" fill="url(#armorHighlight)" opacity=".72"/>
+          <path d="M110 294 L148 304 L219 316 L301 320 L386 320 L441 316 L508 309 L591 295 L642 272 L633 297 L590 315 L508 326 L441 330 L386 333 L301 333 L219 329 L148 317 L115 306 Z" fill="#080d10" stroke="#9aa4a8" stroke-width="2.5" stroke-linejoin="round"/>
+          <path d="M258 175 Q286 123 340 104 Q392 87 438 111 L480 158 L444 189 L347 199 L283 191 Z" fill="url(#canopy)" stroke="#a0aaad" stroke-width="3"/>
+          <path d="M278 171 Q310 124 351 112 Q388 101 415 116 L371 132 Q335 147 310 184 Z" fill="#f1f3f1" opacity=".17"/>
+          <path d="M352 106 L354 194 M412 111 L427 183 M302 164 Q365 138 435 148" fill="none" stroke="#c0c8ca" stroke-width="2" opacity=".72"/>
+          <path d="M264 172 Q299 125 348 109 L378 106 L342 131 Q312 148 292 185 Z" fill="#172127" stroke="#aab4b7" stroke-width="2"/>
+          <path d="M303 169 L342 132 L352 113 M357 112 L407 108 L442 126 L462 155" fill="none" stroke="#d1d7d8" stroke-width="2.2" opacity=".8"/>
+          <path d="M367 193 L444 184 L465 160" fill="none" stroke="#090e11" stroke-width="5"/>
+          <path d="M173 203 Q210 183 257 174 L285 180 M160 212 Q211 192 256 184" fill="none" stroke="#c0c9cb" stroke-width="2.5" opacity=".8"/>
+          <path d="M180 218 Q211 205 240 201" fill="none" stroke="#070b0e" stroke-width="5"/>
+          <path d="M119 253 L161 219 L218 194 L268 187 L301 207 L259 243 L191 278 L130 286 Z" fill="#161d21" stroke="#879297" stroke-width="2.5"/>
+          <path d="M142 251 L178 224 L223 207 L254 204 L229 230 L184 256 L142 272 Z" fill="#59646a" opacity=".55"/>
+          <path d="M167 204 Q213 185 260 176 L300 163 L282 187 Q238 206 205 232 L154 255 L143 246 Z" fill="#7a858a" opacity=".3"/>
+          <path d="M151 245 Q198 215 245 197 L281 181 M166 252 Q208 226 248 211" fill="none" stroke="#c1c9ca" stroke-width="2" opacity=".72"/>
+          <path d="M304 201 L355 179 L410 190 L440 226 L416 280 L372 306 L322 278 L293 239 Z" fill="#090e11" stroke="#899499" stroke-width="3"/>
+          <path d="M321 211 L367 194 L405 204 L426 225 L401 240 L343 235 Z M323 216 L386 201 M322 226 L394 212 M328 236 L401 222" fill="#354047" stroke="#a4afb2" stroke-width="1.5"/>
+          <path d="M84 238 L105 212 L142 204 L165 226 L148 264 L109 276 L79 263 Z" fill="#080d10" stroke="#a1acb0" stroke-width="3"/>
+          <path d="M94 235 Q116 216 141 215 L154 228 L138 242 L102 249 Z" fill="#131c20" stroke="#737f85" stroke-width="2"/>
+          <path d="M99 231 Q117 218 140 219 L151 227 L135 237 L105 242 Z" fill="url(#headlamp)" stroke="#d7dede" stroke-width="1.5"/>
+          <path d="M81 264 L112 256 L151 267 L168 286 L144 299 L96 284 Z" fill="#080c0f" stroke="#b3bdc0" stroke-width="3"/>
+          <path d="M91 266 L121 262 L150 271 L154 284 L140 291 L105 280 Z" fill="#10171b" stroke="#737f85" stroke-width="2"/>
+          <path d="M99 266 L110 282 M108 264 L119 285 M118 263 L129 287 M128 265 L139 289 M138 268 L148 286" stroke="#aab4b7" stroke-width="2"/>
+          <path d="M79 257 L95 253 M83 291 L107 301 L147 304 M154 263 L178 271" fill="none" stroke="#e0e5e5" stroke-width="2.5"/>
+          <path d="M191 239 Q210 231 229 235 L235 255 M192 246 L220 244" fill="none" stroke="#98a3a7" stroke-width="2"/>
+          <path d="M454 224 Q478 188 512 190 Q552 194 571 232" fill="none" stroke="#8d999e" stroke-width="5"/>
+          <path d="M338 204 Q357 196 378 198 L401 207 M341 210 Q362 204 383 207" fill="none" stroke="#aeb8bb" stroke-width="2" opacity=".72"/>
+          <path d="M377 198 L368 250 L352 267 M396 205 L418 224" fill="none" stroke="#070b0e" stroke-width="4"/>
+          <path d="M168 286 Q192 228 247 218 Q297 212 330 253 L352 309 L329 330 L267 335 L211 319 Z" fill="#030506" stroke="#9aa4a7" stroke-width="4"/>
+          <circle cx="265" cy="276" r="65" fill="#020304" stroke="#aab3b6" stroke-width="6"/><circle cx="265" cy="276" r="58" fill="none" stroke="#657177" stroke-width="3" stroke-dasharray="3 7"/><circle cx="265" cy="276" r="48" fill="url(#wheelMetal)" stroke="#b7c0c2" stroke-width="3"/><circle cx="265" cy="276" r="37" fill="none" stroke="#12181b" stroke-width="6"/><circle cx="265" cy="276" r="27" fill="none" stroke="#879297" stroke-width="3"/>
+          <path d="M265 232 V320 M221 276 H309 M234 245 L296 307 M296 245 L234 307 M249 233 L281 319" fill="none" stroke="#aeb8bb" stroke-width="2"/><circle cx="265" cy="276" r="7" fill="#aeb8bb"/>
+          <path d="M510 270 Q528 197 592 197 Q656 198 674 270 L650 315 L557 315 Z" fill="#030506" stroke="#879297" stroke-width="4"/>
+          <circle cx="592" cy="276" r="65" fill="#020405" stroke="#aab3b6" stroke-width="6"/>
+          <circle cx="592" cy="276" r="58" fill="none" stroke="#657177" stroke-width="3" stroke-dasharray="3 7"/>
+          <circle cx="592" cy="276" r="48" fill="url(#wheelMetal)" stroke="#b7c0c2" stroke-width="3"/>
+          <circle cx="592" cy="276" r="37" fill="none" stroke="#12181b" stroke-width="6"/>
+          <circle cx="592" cy="276" r="27" fill="none" stroke="#879297" stroke-width="3"/>
+          <path d="M592 232 V320 M548 276 H636 M561 245 L623 307 M623 245 L561 307 M576 233 L608 319" fill="none" stroke="#aeb8bb" stroke-width="2"/>
+          <circle cx="592" cy="276" r="7" fill="#aeb8bb"/>
+          <path d="M121 298 L207 319 M391 320 L484 310 M616 290 L653 272 M185 214 L251 186 M450 150 L498 170" fill="none" stroke="#bdc5c7" stroke-width="2" opacity=".7"/>
+          <path d="M103 259 L127 255 M111 267 L137 263 M145 282 L164 279 M280 226 L296 218 M430 197 L454 186 M442 205 L466 195 M454 214 L477 205" fill="none" stroke="#a7b1b4" stroke-width="2"/>
+          <path d="M117 310 Q196 344 294 349 M411 341 Q521 331 631 300" fill="none" stroke="#818d92" stroke-width="2" opacity=".68"/>
+        </svg>
+      </div>
+      <div class="street-credit">
+        <span class="credit-small">LA NOCHE TIENE UN GUARDIÁN</span>
+        <strong>THE DARK KNIGHT</strong>
+      </div>
+      <div class="rain"></div>
+    </section>
+
+    <!-- ESCENA 5: objetos y detalles del vigilante -->
+    <section class="scene scene-relics" id="scene5">
+      <div class="table-surface"></div>
+      <div class="relic batarang">
+        <svg viewBox="0 0 300 135" aria-label="Batarang con forma de murciélago">
+          <defs>
+            <linearGradient id="batarang-metal" x1="0" y1="0" x2="0.85" y2="1">
+              <stop offset="0" stop-color="#e0e6e9"/>
+              <stop offset=".24" stop-color="#83919a"/>
+              <stop offset=".52" stop-color="#39464f"/>
+              <stop offset=".76" stop-color="#aeb8bd"/>
+              <stop offset="1" stop-color="#46535b"/>
+            </linearGradient>
+          </defs>
+          <path d="M150 123 C138 108 125 96 112 92 C99 88 86 91 76 100 C73 83 61 74 4 77 C14 47 40 23 82 12 C70 26 67 36 79 43 C91 50 111 52 132 51 L139 26 L150 40 L161 40 L168 26 L175 51 C196 52 216 50 228 43 C240 36 237 26 225 12 C267 23 286 47 296 77 C239 74 227 83 224 100 C214 91 201 88 188 92 C175 96 162 108 150 123 Z"/>
+          <path d="M21 71 C56 61 81 63 105 75 L132 88 L145 111 M279 71 C244 61 219 63 195 75 L168 88 L155 111" class="engrave"/>
+          <path d="M31 57 C58 43 79 39 100 48 M269 57 C242 43 221 39 200 48" class="edge-glint"/>
+        </svg>
+        <span class="object-label">BATARANG</span>
+      </div>
+      <div class="relic belt">
+        <div class="belt-strap"></div>
+        <div class="belt-case"></div><div class="belt-case"></div><div class="belt-case"></div><div class="belt-case"></div><div class="belt-case"></div>
+        <div class="belt-buckle"></div>
+        <div class="belt-mark" aria-hidden="true"></div>
+        <span class="object-label">CINTURÓN TÁCTICO</span>
+      </div>
+      <div class="relic cowl">
+        <div class="cowl-shape"><i></i><b></b></div>
+        <span class="object-label">LA MÁSCARA</span>
+      </div>
+      <div class="relic-file">
+        <span>ARCHIVO 001</span><strong>WAYNE</strong><small>GOTHAM POLICE DEPARTMENT</small>
+      </div>
+      <div class="relic-caption">CADA SOMBRA ESCONDE UNA HISTORIA.</div>
+    </section>
+
+    <!-- ESCENA 5: una pista en los callejones de Gotham -->
+    <section class="scene scene-alley" id="scene6">
+      <div class="alley-wall alley-wall-left"></div>
+      <div class="alley-wall alley-wall-right"></div>
+      <div class="alley-fire-escape"></div>
+      <div class="alley-lamp"></div>
+      <div class="alley-puddle"></div>
+      <div class="alley-shadow"></div>
+      <div class="alley-credit">
+        <span class="credit-small">CADA CALLE GUARDA UN SECRETO</span>
+        <strong>LA INVESTIGACIÓN COMIENZA</strong>
+      </div>
+      <div class="rain"></div>
+    </section>
+
+    <!-- ESCENA 6: créditos ascendentes y tarjeta final -->
+    <section class="scene scene-finale" id="scene7">
+      <div class="final-haze"></div>
+      <div class="final-credits">
+        <div class="credits-roll">
+          <p>UNA HISTORIA DE GOTHAM</p>
+          <h2>BATMAN</h2>
+          <p>UN HOMENAJE FAN-MADE</p>
+          <p class="credit-gap">CON LA PARTICIPACIÓN DE</p>
+          <h3>EL CABALLERO OSCURO</h3>
+          <p>Y LOS HABITANTES DE GOTHAM CITY</p>
+          <p class="credit-gap">DIRECCIÓN</p>
+          <h3>LA NOCHE</h3>
+          <p class="credit-gap">FOTOGRAFÍA</p>
+          <h3>LLUVIA Y SOMBRAS</h3>
+          <p class="credit-gap">MÚSICA ORIGINAL</p>
+          <h3>GOTHAM AFTER DARK</h3>
+          <p class="credit-gap">NINGUNA CIUDAD ESTÁ PERDIDA</p>
+        </div>
+      </div>
+      <div class="final-bat">
+        <svg viewBox="0 0 300 130" class="bat-logo" aria-label="Emblema original de murciélago">
+          <path d="M150 123 C138 108 125 96 112 92 C99 88 86 91 76 100 C73 83 61 74 4 77 C14 47 40 23 82 12 C70 26 67 36 79 43 C91 50 111 52 132 51 L139 26 L150 40 L161 40 L168 26 L175 51 C196 52 216 50 228 43 C240 36 237 26 225 12 C267 23 286 47 296 77 C239 74 227 83 224 100 C214 91 201 88 188 92 C175 96 162 108 150 123 Z"/>
+        </svg>
+      </div>
+      <div class="final-title">BATMAN</div>
+      <div class="final-subtitle">EL CABALLERO DE LA NOCHE</div>
+    </section>
+
+    <div class="opening-black" id="openingBlack">
+      <p>EN LAS SOMBRAS DE GOTHAM</p>
+    </div>
+
+    <div class="controls">
+      <button id="replayBtn" class="control-btn">↻ REPRODUCIR INTRO</button>
+      <button id="soundBtn" class="control-btn" aria-pressed="false">♫ ACTIVAR AUDIO</button>
+      <span class="hint">Experiencia cinematográfica · sonido opcional</span>
+    </div>
+    <div class="progress"><span id="progressBar"></span></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
